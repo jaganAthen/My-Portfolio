@@ -2,11 +2,20 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "poppins-bold",sans-serif;
+    font-family: "Poppins",sans-serif;
     box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
+}
+/* custom scroll bar */
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: #020307;
+}
+html::-webkit-scrollbar-thumb {
+    background:  #ff004f;
+    border-radius: 5rem;
 }
 
 /* the entire body style */
