@@ -27,29 +27,6 @@ function opentab(tabname){
 }
 
 
-
-/////////////////////google shit linking code and github script with source key
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxDxrjRr52CIv8mcBiOa-ytC5L8e9jFUq6MnHZcbcmpiXu9koilzVfxhuCHactIw9Nm/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg= document.getElementById("msg");
-
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(_ => {
-   msg.innerHTML = "Message Sent Successfully!";
-   setTimeout(function (){
-      msg.innerHTML =""
-   },5000)
-   form.reset();
- })
- .catch(error => {
-   console.error(error);
-   msg.innerHTML = "An error occurred while sending the message.";
- });
- 
-})
-
 ///////////////////////alert about under processs
 function showAlert() {
    alert("We're sorry, our site is currently under construction. Please check back soon for updates!");
