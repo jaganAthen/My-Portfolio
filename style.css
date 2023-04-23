@@ -22,6 +22,7 @@ html::-webkit-scrollbar-thumb {
 body{
     background: #080808;
     color: #fff;
+
 }
 
 /* ...........................................................the header section.................................................... */
@@ -503,3 +504,6 @@ nav .fas{
     display: none;
   }
 }
+
+
+
